@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="main" *ngIf="data.location?.name.length > 0">
+        <img [src]="data.current?.condition.icon" alt="">
+        <h3>{{data.location?.name}}, {{data.location?.country}}</h3>
+        <h3>{{data.location?.region}}</h3>
+    </div>
+    <div class="side" *ngIf="data.location?.name.length > 0">
+        <p><img src="../../assets/thermometer_icon.jfif"> <span>{{data.current?.temp_c}} <sup>o</sup>C</span></p>
+        <p><img src="../../assets/wind_icon.png"> <span>{{data.current?.wind_kph}} km/h</span></p>
+        <p><img src="../../assets/compass_icon.png" alt=""> <span>{{data.current?.wind_degree}}<sup>o</sup></span></p>
+        <p><img src="../../assets/clock_icon.png" alt=""> <span>{{data.location?.localtime}}</span></p>
+    </div>
+    <div class="input">
+        <app-input>
+        </app-input>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+input {
+    border-radius: 0;
+    border: 1px solid orange;
+    outline: none;
+    height: 30px;
+    width: 140px;
+    border-radius: 3px;
+}
+
+button {
+    border: 0;
+    margin-left: 10px;
+    outline: none;
+    color: white;
+    background: rgb(224, 15, 120);
+    width: 60px;
+    height: 31px;
+    border-radius: 3px;
+    font-weight: 550;
+}
